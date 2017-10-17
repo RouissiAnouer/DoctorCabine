@@ -25,7 +25,7 @@ public class MainActivity extends Activity {
     RequestQueue requestQueue;
     TextInputLayout loginLayout;
     TextInputLayout pwdLayout;
-    //mise a jour
+    //mise a jour par anouer
 
 
     private TextWatcher mTextWatcher = new TextWatcher() {
