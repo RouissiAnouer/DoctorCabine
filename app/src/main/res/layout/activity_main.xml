@@ -63,7 +63,7 @@
         android:layout_alignStart="@+id/pwd_text" />
 
     <TextView
-        android:text="Mot de passe oublié?"
+        android:text="@string/mot_de_passe_oubli"
         android:id="@+id/TextView1"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
