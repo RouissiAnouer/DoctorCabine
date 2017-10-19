@@ -7,6 +7,7 @@ import android.support.v7.widget.AppCompatButton;
 import android.support.v7.widget.AppCompatEditText;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.text.method.LinkMovementMethod;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -25,6 +26,7 @@ public class MainActivity extends Activity {
     RequestQueue requestQueue;
     TextInputLayout loginLayout;
     TextInputLayout pwdLayout;
+
 
 
 
@@ -56,6 +58,7 @@ public class MainActivity extends Activity {
             b.setEnabled(true);
         }
     }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
