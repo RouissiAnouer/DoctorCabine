@@ -1,6 +1,7 @@
 package com.halgo.clientcab;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.support.design.widget.TextInputLayout;
 import android.os.Bundle;
 import android.support.v7.widget.AppCompatButton;
@@ -18,6 +19,14 @@ import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.Volley;
 
 public class MainActivity extends Activity {
+
+    public void inscription (View view){
+        startActivity(new Intent(this,InscriptionActivity.class));
+    }
+
+    public void passforget (View view){
+        startActivity(new Intent(this,VerificationPass.class));
+    }
 
     TextView erreur;
     AppCompatEditText login;

@@ -9,4 +9,5 @@
     <string name="prenom">Prenom</string>
     <string name="numero_de_telephone">Numero de telephone</string>
     <string name="date_de_naissance">Date de naissance</string>
+    <string name="saisir_votre_email_ici_svp">Saisir votre email ici svp</string>
 </resources>
