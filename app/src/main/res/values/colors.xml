@@ -7,4 +7,5 @@
     <color name="errorColor">#FF0000</color>
     <color name="colorButtonText">#FFFFFF</color>
     <color name="colorFab">#90CAF9</color>
+    <color name="success">#00E676</color>
 </resources>

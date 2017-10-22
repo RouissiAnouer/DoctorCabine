@@ -12,4 +12,15 @@
         <item name="android:textColor">@color/colorButtonText</item>
     </style>
 
+    <style name="Bouton_success" parent="Widget.AppCompat.Button.Colored">
+        <item name="backgroundTint">@color/success</item>
+        <item name="android:textColor">@color/colorButtonText</item>
+    </style>
+
+    <style name="Bouton_blue" parent="Widget.AppCompat.Button.Colored">
+        <item name="backgroundTint">@color/colorFab</item>
+        <item name="android:textColor">@color/colorButtonText</item>
+    </style>
+
+
 </resources>

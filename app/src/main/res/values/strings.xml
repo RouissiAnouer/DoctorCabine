@@ -10,4 +10,8 @@
     <string name="numero_de_telephone">Numero de telephone</string>
     <string name="date_de_naissance">Date de naissance</string>
     <string name="saisir_votre_email_ici_svp">Saisir votre email ici svp</string>
+    <string name="selectionner">Selectionner</string>
+    <string name="date">Date</string>
+    <string name="envoyer">Envoyer</string>
+    <string name="heure">Heure</string>
 </resources>
