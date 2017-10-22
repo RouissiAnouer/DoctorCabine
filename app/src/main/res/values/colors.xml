@@ -6,4 +6,5 @@
     <color name="colorButton">#2196F3</color>
     <color name="errorColor">#FF0000</color>
     <color name="colorButtonText">#FFFFFF</color>
+    <color name="colorFab">#90CAF9</color>
 </resources>
