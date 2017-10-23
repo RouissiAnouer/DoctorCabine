@@ -19,4 +19,8 @@
     <string name="heure_rdv">Heure RDV</string>
     <string name="etat">Etat:</string>
     <string name="valid_en_attente_refus">Validé/En Attente/Refusé</string>
+    <string name="pr_nom">Prénom</string>
+    <string name="e_mail">E-mail</string>
+    <string name="inscription">Inscription</string>
+    <string name="retour">Retour</string>
 </resources>
