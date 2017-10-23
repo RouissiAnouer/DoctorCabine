@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <DatePicker
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/datePicker"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/etat"
+        android:id="@+id/state_txt"
+        android:layout_alignBottom="@+id/datePicker"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/valid_en_attente_refus"
+        android:id="@+id/state_value"
+        android:layout_marginLeft="47dp"
+        android:layout_marginStart="47dp"
+        android:layout_alignBottom="@+id/datePicker"
+        android:layout_toRightOf="@+id/state_txt"
+        android:layout_toEndOf="@+id/state_txt" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/supprimer"
+        android:id="@+id/deleterdv"
+        style="@style/Bouton_red"
+        android:layout_marginBottom="12dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/heure_rdv"
+        android:id="@+id/heurescreen"
+        style="@style/Bouton"
+        android:layout_alignBaseline="@+id/deleterdv"
+        android:layout_alignBottom="@+id/deleterdv"
+        android:layout_alignRight="@+id/datePicker"
+        android:layout_alignEnd="@+id/datePicker" />
+
+
+</RelativeLayout>

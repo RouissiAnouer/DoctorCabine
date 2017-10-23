@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TimePicker
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/heurerdv"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/supprimer"
+        android:id="@+id/deleterdv"
+        style="@style/Bouton_red"
+        android:layout_marginRight="119dp"
+        android:layout_marginEnd="119dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="12dp" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Retour"
+        android:id="@+id/datescreen"
+        style="@style/Bouton"
+        android:layout_alignBaseline="@+id/deleterdv"
+        android:layout_alignBottom="@+id/deleterdv"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>

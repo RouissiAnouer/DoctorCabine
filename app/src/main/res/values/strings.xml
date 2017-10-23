@@ -14,4 +14,9 @@
     <string name="date">Date</string>
     <string name="envoyer">Envoyer</string>
     <string name="heure">Heure</string>
+    <string name="supprimer">Supprimer</string>
+    <string name="etat_rdv">Etat RDV</string>
+    <string name="heure_rdv">Heure RDV</string>
+    <string name="etat">Etat:</string>
+    <string name="valid_en_attente_refus">Validé/En Attente/Refusé</string>
 </resources>
