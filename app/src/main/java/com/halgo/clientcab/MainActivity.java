@@ -20,13 +20,7 @@ import com.android.volley.toolbox.Volley;
 
 public class MainActivity extends Activity {
 
-    public void inscription (View view){
-        startActivity(new Intent(this,InscriptionActivity.class));
-    }
 
-    public void passforget (View view){
-        startActivity(new Intent(this,VerificationPass.class));
-    }
 
     TextView erreur;
     AppCompatEditText login;
@@ -35,6 +29,8 @@ public class MainActivity extends Activity {
     RequestQueue requestQueue;
     TextInputLayout loginLayout;
     TextInputLayout pwdLayout;
+    TextView pw_oubli;
+    TextView inscription;
 
 
 
@@ -80,6 +76,22 @@ public class MainActivity extends Activity {
         btn= (AppCompatButton) findViewById(R.id.ok);
         loginLayout=(TextInputLayout)findViewById(R.id.login_text);
         pwdLayout=(TextInputLayout)findViewById(R.id.pwd_text);
+        pw_oubli=(TextView)findViewById(R.id.pw_oubli);
+        inscription=(TextView)findViewById(R.id.inscription);
+
+        pw_oubli.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                startActivity(new Intent(MainActivity.this,VerificationPass.class));
+            }
+        });
+
+        inscription.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                startActivity(new Intent(MainActivity.this,InscriptionActivity.class));
+            }
+        });
 
         login.setOnFocusChangeListener(new View.OnFocusChangeListener(){
             @Override

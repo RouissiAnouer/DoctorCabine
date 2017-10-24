@@ -30,7 +30,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:src="@drawable/plus"
-            android:style="@style/Bouton_blue"
+            style="@style/Bouton_blue"
             android:text="@string/selectionner"
             android:layout_alignBottom="@+id/date_text"
             android:layout_alignParentRight="true"

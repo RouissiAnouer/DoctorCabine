@@ -69,7 +69,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/inscription"
-        android:style="@style/Bouton"
+        style="@style/Bouton"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="12dp"
         android:layout_alignLeft="@+id/editText13"

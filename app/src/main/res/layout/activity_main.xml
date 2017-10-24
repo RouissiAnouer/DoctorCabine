@@ -64,11 +64,9 @@
 
     <TextView
         android:text="@string/mot_de_passe_oubli"
-        android:id="@+id/TextView1"
+        android:id="@+id/pw_oubli"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
-        android:autoLink="web"
-        android:onClick="passforget"
         android:layout_below="@+id/ok"
         android:layout_centerHorizontal="true">
     </TextView>
@@ -83,13 +81,12 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="41dp" />
 
+
     <TextView
         android:id="@+id/inscription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/erreur"
         android:layout_centerHorizontal="true"
-        android:onClick="inscription"
-        android:autoLink="web"
-        android:text="S'inscrire" />
+        android:text="@string/s_inscrire" />
 </RelativeLayout>
