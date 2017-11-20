@@ -35,7 +35,7 @@ public class MainActivity extends Activity {
     TextInputLayout pwdLayout;
     TextView pw_oubli;
     TextView inscription;
-    String url = "http://10.0.2.2:8080/GestionCabinet/webapi/utilisateur/androidConnect?";
+    String url = "http://10.0.2.3:8080/GestionCabinet/webapi/utilisateur/androidConnect/";
     Long id=0L;
 
 
@@ -171,7 +171,7 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v){
                 final Intent intent=new Intent(MainActivity.this,ListRendezVousActivity.class);
-                String JsonURL = url +"login="+ login.getText().toString()+"&pwd="+pwd.getText().toString();
+                String JsonURL = url + login.getText().toString()+"/"+pwd.getText().toString();
                 StringRequest obreg = new StringRequest(Request.Method.GET,JsonURL,
                         new Response.Listener<String>(){
                             @Override
@@ -183,7 +183,7 @@ public class MainActivity extends Activity {
                                         startActivity(intent);
                                     }
                                 } catch (NumberFormatException e) {
-                                    erreur.setText("verifier svp");
+                                    erreur.setText("barra nayek");
                                 }
                             }
                         },
