@@ -183,7 +183,7 @@ public class MainActivity extends Activity {
                                         startActivity(intent);
                                     }
                                 } catch (NumberFormatException e) {
-                                    erreur.setText("barra nayek");
+                                    erreur.setText("verifier svp!!");
                                 }
                             }
                         },
