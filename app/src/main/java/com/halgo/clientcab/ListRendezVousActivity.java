@@ -13,8 +13,18 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonArrayRequest;
+import com.android.volley.toolbox.Volley;
+
 import org.json.JSONArray;
 import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.Date;
 
 /**
  * Created by Halgo on 22/10/2017 nn.
@@ -33,7 +43,7 @@ public class ListRendezVousActivity extends AppCompatActivity {
         setContentView(R.layout.rendez_vous_list);
         listView = (ListView) findViewById(R.id.list);
         Long idCompte=getIntent().getLongExtra("idCompte",0L);
-        request=Volley.newRequestQueue(this);
+        request= Volley.newRequestQueue(this);
         JsonArrayRequest obreq=new JsonArrayRequest(Request.Method.GET,url+idCompte.toString(),null,
                 new Response.Listener<JSONArray>() {
                     @Override
@@ -43,8 +53,8 @@ public class ListRendezVousActivity extends AppCompatActivity {
                                 values = new String[response.length()];
                                 for (int i = 0; i < response.length(); i++) {
                                     JSONObject rdv = response.getJSONObject(i);
-                                    Date dateRdv = rdv.getDate("dateRdv");
-                                    Date heureRdv = rdv.getDate("heureRdv");
+                                    String dateRdv = rdv.getString("dateRdv");
+                                    String heureRdv = rdv.getString("heureRdv");
                                     String etatRdv = rdv.getString("etatRdv");
                                     values[i] = etatRdv + "\n" + dateRdv + "\n" + heureRdv;
 
