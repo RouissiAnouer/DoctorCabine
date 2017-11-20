@@ -67,6 +67,7 @@
 
         </activity>
         <activity android:name=".ListRendezVousActivity"></activity>
+        <activity android:name=".ListViewExemple"></activity>
         <activity android:name=".DetailHeureRDV"
             android:label="VerificationPass"
             android:parentActivityName=".MainActivity"
