@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.support.design.widget.TextInputLayout;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.AppCompatButton;
 import android.support.v7.widget.AppCompatEditText;
 import android.text.Editable;
@@ -22,9 +23,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
-public class MainActivity extends Activity {
-
-
+public class MainActivity extends AppCompatActivity {
 
     TextView erreur;
     AppCompatEditText login;
@@ -35,12 +34,9 @@ public class MainActivity extends Activity {
     TextInputLayout pwdLayout;
     TextView pw_oubli;
     TextView inscription;
-    String url = "http://10.0.2.3:8080/GestionCabinet/webapi/utilisateur/androidConnect/";
+    String url = "http://10.0.3.2:8080/GestionCabinet/webapi/patient/connexion?";
     Long id=0L;
-
-
-
-
+    /*****************************************************************/
     private TextWatcher mTextWatcher = new TextWatcher() {
         @Override
         public void beforeTextChanged(CharSequence charSequence, int i, int i2, int i3) {
@@ -171,7 +167,7 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v){
                 final Intent intent=new Intent(MainActivity.this,ListRendezVousActivity.class);
-                String JsonURL = url + login.getText().toString()+"/"+pwd.getText().toString();
+                String JsonURL = url +"login="+ login.getText().toString()+"&pwd="+pwd.getText().toString();
                 StringRequest obreg = new StringRequest(Request.Method.GET,JsonURL,
                         new Response.Listener<String>(){
                             @Override

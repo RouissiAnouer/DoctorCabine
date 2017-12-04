@@ -18,66 +18,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".InscriptionActivity"
-            android:label="Inscription"
-            android:parentActivityName=".MainActivity"
-            tools:targetApi="jelly_bean">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity"/>
-
-
-        </activity>
-        <activity android:name=".VerificationPass"
-        android:label="VerificationPass"
-        android:parentActivityName=".MainActivity"
-        tools:targetApi="jelly_bean">
-        <meta-data
-            android:name="android.support.PARENT_ACTIVITY"
-            android:value=".MainActivity"/>
-
-    </activity>
-        <!--   <activity android:name=".ListRendezVousActivity"
-               android:label="VerificationPass"
-               android:parentActivityName=".MainActivity"
-               tools:targetApi="jelly_bean">
-               <meta-data
-                   android:name="android.support.PARENT_ACTIVITY"
-                   android:value=".MainActivity"/>
-
-           </activity>
-           -->
-
-    <activity android:name=".NouveauRendezVous"
-        android:label="VerificationPass"
-        android:parentActivityName=".MainActivity"
-        tools:targetApi="jelly_bean">
-        <meta-data
-            android:name="android.support.PARENT_ACTIVITY"
-            android:value=".MainActivity"/>
-
-    </activity>
-        <activity android:name=".DetailDateRDV"
-            android:label="VerificationPass"
-            android:parentActivityName=".MainActivity"
-            tools:targetApi="jelly_bean">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity"/>
-
-        </activity>
-        <activity android:name=".ListRendezVousActivity"></activity>
-        <activity android:name=".ListViewExemple"></activity>
-        <activity android:name=".DetailHeureRDV"
-            android:label="VerificationPass"
-            android:parentActivityName=".MainActivity"
-            tools:targetApi="jelly_bean">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity"/>
-
-        </activity>
-
+        <activity android:name=".InscriptionActivity"/>
+        <activity android:name=".VerificationPass"/>
+        <activity android:name=".NouveauRendezVous"/>
+        <activity android:name=".DetailDateRDV"/>
+        <activity android:name=".ListRendezVousActivity"/>
+        <activity android:name=".ListViewExemple"/>
+        <activity android:name=".ListRowActivity"/>
+        <activity android:name=".DetailHeureRDV"/>
     </application>
 
 </manifest>

@@ -2,9 +2,10 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    >
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <android.support.design.widget.TextInputLayout
+        app:errorTextAppearance="@style/MyAppTheme.TextInputLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/login_text"
@@ -29,6 +30,7 @@
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
+        app:errorTextAppearance="@style/MyAppTheme.TextInputLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/pwd_text"
@@ -56,7 +58,7 @@
         android:id="@+id/ok"
         android:layout_marginTop="89dp"
         android:layout_below="@+id/pwd_text"
-        style="@style/Bouton"
+        android:theme="@style/Bouton"
         android:layout_alignRight="@+id/pwd_text"
         android:layout_alignEnd="@+id/pwd_text"
         android:layout_alignLeft="@+id/pwd_text"

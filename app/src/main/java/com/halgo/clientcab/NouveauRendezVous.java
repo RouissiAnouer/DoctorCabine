@@ -3,6 +3,7 @@ package com.halgo.clientcab;
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -20,16 +21,16 @@ import java.util.Calendar;
 
 public class NouveauRendezVous extends AppCompatActivity implements
         View.OnClickListener{
-    Button btnDatePicker, btnTimePicker;
+    FloatingActionButton btnDatePicker, btnTimePicker;
     EditText txtDate, txtTime;
     private int mYear, mMonth, mDay, mHour, mMinute;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        btnDatePicker=(Button)findViewById(R.id.btn_date);
-        btnTimePicker=(Button)findViewById(R.id.btn_time);
+        setContentView(R.layout.nouveau_rendez_vous_activity);
+        btnDatePicker=(FloatingActionButton)findViewById(R.id.btn_date);
+        btnTimePicker=(FloatingActionButton)findViewById(R.id.btn_time);
         txtDate=(EditText)findViewById(R.id.in_date);
         txtTime=(EditText)findViewById(R.id.in_time);
         btnDatePicker.setOnClickListener(this);
