@@ -4,7 +4,7 @@
 
 <!--charfi-->
     <EditText
-        android:id="@+id/editText6"
+        android:id="@+id/nom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -12,71 +12,120 @@
         android:layout_alignParentTop="true"
         android:layout_marginLeft="60dp"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="38dp"
+        android:layout_marginTop="10dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:hint="@string/nom" />
 
     <EditText
-        android:id="@+id/editText7"
+        android:id="@+id/prenom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText6"
-        android:layout_alignStart="@+id/editText6"
-        android:layout_below="@+id/editText6"
-        android:layout_marginTop="44dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:hint="@string/pr_nom" />
+        android:hint="@string/pr_nom"
+        android:layout_below="@+id/nom"
+        android:layout_alignLeft="@+id/nom"
+        android:layout_alignStart="@+id/nom"
+        android:layout_marginTop="22dp" />
 
     <EditText
-        android:id="@+id/editText11"
+        android:id="@+id/cin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/editText7"
-        android:layout_alignRight="@+id/editText7"
-        android:layout_below="@+id/editText7"
-        android:layout_marginTop="45dp"
         android:ems="10"
-        android:inputType="textEmailAddress"
-        android:hint="@string/e_mail"/>
+        android:inputType="number"
+        android:hint="@string/cintext"
+        android:layout_below="@+id/tel"
+        android:layout_alignLeft="@+id/tel"
+        android:layout_alignStart="@+id/tel"
+        android:layout_marginTop="22dp" />
 
     <EditText
-        android:id="@+id/editText13"
+        android:id="@+id/login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText12"
-        android:layout_alignStart="@+id/editText12"
-        android:layout_below="@+id/editText12"
-        android:layout_marginTop="47dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:hint="@string/login"/>
+        android:hint="@string/login"
+        android:layout_below="@+id/sexe"
+        android:layout_marginTop="22dp"
+        android:layout_alignLeft="@+id/sexe"
+        android:layout_alignStart="@+id/sexe"
+        android:layout_centerHorizontal="true" />
 
     <EditText
-        android:id="@+id/editText12"
+        android:id="@+id/pwd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText11"
-        android:layout_alignStart="@+id/editText11"
-        android:layout_below="@+id/editText11"
-        android:layout_marginTop="46dp"
         android:ems="10"
         android:inputType="textPassword"
-        android:hint="@string/mot_de_passe"/>
+        android:hint="@string/mot_de_passe"
+        android:layout_below="@+id/login"
+        android:layout_alignLeft="@+id/login"
+        android:layout_alignStart="@+id/login"
+        android:layout_marginTop="22dp" />
 
     <android.support.v7.widget.AppCompatButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/inscription"
         style="@style/Bouton"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="12dp"
-        android:layout_alignLeft="@+id/editText13"
-        android:layout_alignStart="@+id/editText13"
-        android:layout_alignRight="@+id/editText13"
-        android:layout_alignEnd="@+id/editText13" />
+        android:id="@+id/inscrit"
+        android:layout_below="@+id/pwd"
 
+       />
 
+    <EditText
+        android:id="@+id/tel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="@string/num_ro_de_telephone"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/prenom"
+        android:layout_alignLeft="@+id/prenom"
+        android:layout_alignStart="@+id/prenom" />
 
+    <EditText
+        android:id="@+id/dateNaiss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date"
+        android:hint="@string/date_de_naissancef"
+        android:layout_below="@+id/cin"
+        android:layout_alignLeft="@+id/cin"
+        android:layout_alignStart="@+id/cin"
+        android:layout_marginTop="22dp" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sexe"
+        android:layout_below="@+id/dateNaiss"
+        android:layout_alignLeft="@+id/dateNaiss"
+        android:layout_alignStart="@+id/dateNaiss"
+        >
+        <RadioButton
+            android:id="@+id/femal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/f"
+            android:layout_marginRight="35dp"
+            android:layout_above="@+id/sexe"
+            android:layout_alignRight="@+id/dateNaiss"
+            android:layout_alignEnd="@+id/dateNaiss"
+            android:layout_marginBottom="5dp" />
+
+        <RadioButton
+            android:id="@+id/male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/m"
+            android:layout_above="@+id/sexe"
+            android:layout_alignLeft="@+id/login"
+            android:layout_alignStart="@+id/login" />
+    </RadioGroup>
 </RelativeLayout>

@@ -24,4 +24,9 @@
     <string name="inscription">Inscription</string>
     <string name="retour">Retour</string>
     <string name="s_inscrire">S\'inscrire</string>
+    <string name="cintext">CIN</string>
+    <string name="num_ro_de_telephone">Numéro de telephone</string>
+    <string name="date_de_naissancef">Date de naissance</string>
+    <string name="m">M</string>
+    <string name="f">F</string>
 </resources>

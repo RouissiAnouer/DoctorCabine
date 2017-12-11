@@ -1,9 +1,7 @@
 package com.halgo.clientcab;
 
 import android.app.DatePickerDialog;
-import android.app.ProgressDialog;
 import android.app.TimePickerDialog;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
@@ -11,10 +9,7 @@ import android.support.v7.widget.AppCompatButton;
 import android.support.v7.widget.AppCompatEditText;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
-import android.widget.CalendarView;
 import android.widget.DatePicker;
-import android.widget.EditText;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
@@ -26,7 +21,6 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.VolleyLog;
 import com.android.volley.toolbox.HttpHeaderParser;
-import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
@@ -35,15 +29,13 @@ import org.json.JSONObject;
 
 import java.io.UnsupportedEncodingException;
 import java.util.Calendar;
-import java.util.HashMap;
-import java.util.Map;
 
 
 /**
  * Created by Halgo on 22/10/2017.
  */
 
-public class NouveauRendezVous extends AppCompatActivity implements
+public class UpdateRendezVous extends AppCompatActivity implements
         View.OnClickListener{
     FloatingActionButton btnDatePicker, btnTimePicker;
     private int mYear, mMonth, mDay, mHour, mMinute;
@@ -56,7 +48,7 @@ public class NouveauRendezVous extends AppCompatActivity implements
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.nouveau_rendez_vous_activity);
+        setContentView(R.layout.update_rendez_vous);
         btnDatePicker = (FloatingActionButton) findViewById(R.id.btn_date);
         btnTimePicker = (FloatingActionButton) findViewById(R.id.btn_time);
         btnDatePicker.setOnClickListener(this);
@@ -137,7 +129,7 @@ public class NouveauRendezVous extends AppCompatActivity implements
                 @Override
                 public void onResponse(String response) {
                     Log.i("VOLLEY", response);
-                    Toast.makeText(NouveauRendezVous.this,"Ajout avec succés",Toast.LENGTH_LONG).show();
+                    Toast.makeText(UpdateRendezVous.this,"Ajout avec succés",Toast.LENGTH_LONG).show();
                 }
             }, new Response.ErrorListener() {
                 @Override

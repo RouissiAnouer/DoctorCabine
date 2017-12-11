@@ -65,16 +65,8 @@ public class ListRendezVousActivity extends AppCompatActivity {
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(mAdapter);
 
-        Long idCompte=getIntent().getLongExtra("idCompte",0L);
+        final Long idCompte=getIntent().getLongExtra("idCompte",0L);
         request= Volley.newRequestQueue(this);
-
-        add.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                startActivity(new Intent(ListRendezVousActivity.this, NouveauRendezVous.class));
-            }
-        });
-
         JsonArrayRequest obreq=new JsonArrayRequest(Request.Method.GET,url+idCompte.toString(),null,
                 new Response.Listener<JSONArray>() {
                     @Override
@@ -107,10 +99,14 @@ public class ListRendezVousActivity extends AppCompatActivity {
         );
 
         request.add(obreq);
-
-
-
-
+        add.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent inten=new Intent(ListRendezVousActivity.this, NouveauRendezVous.class);
+                inten.putExtra("idCompte",idCompte);
+                startActivity(inten);
+            }
+        });
 
     }
 }

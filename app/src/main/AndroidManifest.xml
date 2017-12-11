@@ -21,11 +21,10 @@
         <activity android:name=".InscriptionActivity"/>
         <activity android:name=".VerificationPass"/>
         <activity android:name=".NouveauRendezVous"/>
-        <activity android:name=".DetailDateRDV"/>
+        <activity android:name=".UpdateRendezVous"/>
         <activity android:name=".ListRendezVousActivity"/>
         <activity android:name=".ListViewExemple"/>
         <activity android:name=".ListRowActivity"/>
-        <activity android:name=".DetailHeureRDV"/>
     </application>
 
 </manifest>
