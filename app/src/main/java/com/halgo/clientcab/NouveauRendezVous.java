@@ -50,8 +50,9 @@ public class NouveauRendezVous extends AppCompatActivity implements
     AppCompatButton sending;
     AppCompatEditText heure;
     AppCompatEditText date;
-    String url = "http://10.0.3.2:8080/GestionCabinet/webapi/rendezvous/addAndroid";
+    String url = "http://10.0.2.2:8080/GestionCabinet/webapi/rendezvous/addAndroid";
     Long idCompte;
+    AppCompatButton retour;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,6 +63,7 @@ public class NouveauRendezVous extends AppCompatActivity implements
         btnDatePicker.setOnClickListener(this);
         btnTimePicker.setOnClickListener(this);
         sending = (AppCompatButton) findViewById(R.id.sending);
+        retour=(AppCompatButton)findViewById(R.id.back);
         heure=(AppCompatEditText)findViewById(R.id.in_time);
         date=(AppCompatEditText)findViewById(R.id.in_date);
         idCompte=getIntent().getLongExtra("idCompte",0L);
@@ -69,11 +71,25 @@ public class NouveauRendezVous extends AppCompatActivity implements
             @Override
             public void onClick(View v) {
                 sendingRdv();
-                //startActivity(new Intent(NouveauRendezVous.this, ListRendezVousActivity.class));//ajouter un bouton vers la liste
+                Intent in=new Intent(NouveauRendezVous.this, ListRendezVousActivity.class);
+                in.putExtra("idCompte",idCompte);
+                startActivity(in);
             }
 
         });
-        }
+
+        retour.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent in=new Intent(NouveauRendezVous.this, ListRendezVousActivity.class);
+                in.putExtra("idCompte",idCompte);
+                startActivity(in);
+            }
+
+        });
+
+    }
+
 
     @Override
     public void onClick(View v) {

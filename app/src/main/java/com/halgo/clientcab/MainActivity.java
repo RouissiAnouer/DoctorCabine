@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
     TextInputLayout pwdLayout;
     TextView pw_oubli;
     TextView inscription;
-    String url = "http://10.0.3.2:8080/GestionCabinet/webapi/patient/connexion?";
+    String url = "http://10.0.2.2:8080/GestionCabinet/webapi/patient/connexion?";
     Long id=0L;
     /*****************************************************************/
     private TextWatcher mTextWatcher = new TextWatcher() {

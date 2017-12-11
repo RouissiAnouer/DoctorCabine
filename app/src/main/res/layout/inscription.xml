@@ -5,21 +5,20 @@
 <!--charfi-->
     <EditText
         android:id="@+id/nom"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="60dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:hint="@string/nom" />
+        android:hint="@string/nom"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <EditText
         android:id="@+id/prenom"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
@@ -31,7 +30,7 @@
 
     <EditText
         android:id="@+id/cin"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="number"
@@ -43,7 +42,7 @@
 
     <EditText
         android:id="@+id/login"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
@@ -56,7 +55,7 @@
 
     <EditText
         android:id="@+id/pwd"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPassword"
@@ -78,7 +77,7 @@
 
     <EditText
         android:id="@+id/tel"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="number"
@@ -90,11 +89,13 @@
 
     <EditText
         android:id="@+id/dateNaiss"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="date"
         android:hint="@string/date_de_naissancef"
+        android:clickable="true"
+        android:editable="false"
         android:layout_below="@+id/cin"
         android:layout_alignLeft="@+id/cin"
         android:layout_alignStart="@+id/cin"

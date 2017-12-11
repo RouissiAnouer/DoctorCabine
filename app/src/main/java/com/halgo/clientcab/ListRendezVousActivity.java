@@ -40,7 +40,7 @@ import java.util.List;
 
 public class ListRendezVousActivity extends AppCompatActivity {
 
-    String url ="http://10.0.3.2:8080/GestionCabinet/webapi/rendezvous/getByPatient?id=";
+    String url ="http://10.0.2.2:8080/GestionCabinet/webapi/rendezvous/getByPatient?id=";
     RequestQueue request;
     //ListView listView ;
     FloatingActionButton add;
