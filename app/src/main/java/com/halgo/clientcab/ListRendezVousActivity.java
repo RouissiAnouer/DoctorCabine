@@ -78,7 +78,8 @@ public class ListRendezVousActivity extends AppCompatActivity {
                                     String heureRdv = rdv.getString("heureRdv");
                                     String dateRdv = rdv.getString("dateRdv");
                                     String etatRdv = rdv.getString("etatRdv");
-                                    Example item=new Example(etatRdv,dateRdv,heureRdv);
+                                    Long idRdv=rdv.getLong("idRdv");
+                                    Example item=new Example(idRdv,etatRdv,dateRdv,heureRdv);
                                     rdvList.add(item);
                                 }
                                 mAdapter.notifyDataSetChanged();

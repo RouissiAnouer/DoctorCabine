@@ -6,16 +6,21 @@ package com.halgo.clientcab;
 
 public class Example {
         private String etat, date, heure;
+        private Long idRdv;
 
         public Example() {
         }
 
-        public Example(String etat, String date, String heure) {
+        public Example(Long idRdv, String etat, String date, String heure) {
             this.etat = etat;
             this.date = date;
             this.heure = heure;
+            this.idRdv=idRdv;
         }
 
+        public Long getIdRdv(){return  idRdv;}
+
+        public void setIdRdv(Long idRdv){this.idRdv=idRdv;}
         public String getEtat() {
             return etat;
         }
